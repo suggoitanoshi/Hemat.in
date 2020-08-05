@@ -15,7 +15,7 @@ Anggota:
 | 16519135 | Wisnu Aditya Samiadji | |
 | 16519138 | Raffi Zulvian Muzhaffar | |
 | 16519165 | Jason Stanley Yoman | |
-| 16519187 | Fransiskus Febryan Suryawan | |
+| 16519187 | Fransiskus Febryan Suryawan | Kerangka layar utama, layar tambah pengeluaran, layar penghalang aplikasi |
 | 16519407 | Muhammad Akram Al Bari | |
 | 16519532 | Muhammad Fahkry Malta | |
 
