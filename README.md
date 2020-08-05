@@ -2,8 +2,8 @@
 Sebuah aplikasi untuk mengatur keuangan.
 
 ## Identitas Kelompok
-Nomor Kelompok : 3
-Nama Kelompok: Nama Kelompok
+Nomor Kelompok: 3  
+Nama Kelompok: Nama Kelompok  
 Anggota:
 | NIM | Nama | Kontribusi |
 | --- | --- | --- |
