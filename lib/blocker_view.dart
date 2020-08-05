@@ -11,9 +11,7 @@ class BlockerView extends StatelessWidget {
             Padding(
               child: Text(
                 'Are you sure you want to open that app?',
-                style: TextStyle(
-                  fontSize: 32,
-                ),
+                style: Theme.of(context).textTheme.headline4,
               ),
               padding: EdgeInsets.all(20),
             ),
