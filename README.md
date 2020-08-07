@@ -14,7 +14,7 @@ Anggota:
 | 16519101 | Fahrel Naufal | |
 | 16519135 | Wisnu Aditya Samiadji | |
 | 16519138 | Raffi Zulvian Muzhaffar | |
-| 16519165 | Jason Stanley Yoman | |
+| 16519165 | Jason Stanley Yoman | | Database Pengeluaran dan Limit, Layar Set Limit, Logic Set Limit |
 | 16519187 | Fransiskus Febryan Suryawan | Kerangka layar utama, layar tambah pengeluaran, layar penghalang aplikasi |
 | 16519407 | Muhammad Akram Al Bari | |
 | 16519532 | Muhammad Fahkry Malta | |
