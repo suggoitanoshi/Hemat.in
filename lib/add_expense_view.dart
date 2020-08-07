@@ -12,7 +12,14 @@ enum Jenis { butuh, ingin }
 
 class AddExpenseState extends State<AddExpense>{
   final _formKey = GlobalKey<FormState>();
+  TextEditingController _titleController;
+  TextEditingController _amountController;
   Jenis _jenis = Jenis.butuh;
+  @override
+  void initState(){
+    _titleController = TextEditingController();
+    _amountController = TextEditingController();
+  }
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -26,6 +33,14 @@ class AddExpenseState extends State<AddExpense>{
           child: Column(
             children: <Widget>[
               TextField(
+                controller: _titleController,
+                decoration: InputDecoration(
+                  icon: Icon(Icons.title),
+                  hintText: "Judul Pengeluaran",
+                ),
+              ),
+              TextField(
+                controller: _amountController,
                 decoration: InputDecoration(
                   icon: Icon(Icons.attach_money),
                   hintText: "Jumlah pengeluaran",
@@ -66,7 +81,7 @@ class AddExpenseState extends State<AddExpense>{
               ),
               RaisedButton(
                 child: Text('Add!'),
-                onPressed: (){
+                onPressed: () async {
                   Navigator.pop(context);
                 },
               ),
