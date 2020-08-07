@@ -21,7 +21,8 @@ Anggota:
 
 ## Cara Menjalankan
 1. Install [flutter](https://flutter.dev/docs/get-started/install) beserta semua dependency.
-2. Nyalakan mode pengembang pada smartphone android
-3. Pasang smartphone android ke laptop dengan kabel usb
-4. Cek bahwa perangkat sudah terdeteksi oleh flutter menggunakan perintah `flutter devices`
-5. Jalankan aplikasi dengan menjalankan `flutter run`
+2. Jalankan `flutter pub get` untuk menginstall semua dependency di pubspec
+3. Nyalakan mode pengembang pada smartphone android
+4. Pasang smartphone android ke laptop dengan kabel usb
+5. Cek bahwa perangkat sudah terdeteksi oleh flutter menggunakan perintah `flutter devices`
+6. Jalankan aplikasi dengan menjalankan `flutter run`
