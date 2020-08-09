@@ -10,7 +10,7 @@ Anggota:
 | 16519003 | Giant Andreas Tambunan | |
 | 16519020 | I Gede Govindabhakta | |
 | 16519032 | Gavriel Benny | |
-| 16519099 | Nizamixavier Rafif Lutvie | |
+| 16519099 | Nizamixavier Rafif Lutvie | | Tampilan grafik tren pengeluaran |
 | 16519101 | Fahrel Naufal | |
 | 16519135 | Wisnu Aditya Samiadji | |
 | 16519138 | Raffi Zulvian Muzhaffar | |
