@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 
-class AddExpense extends StatefulWidget{
+import 'database/database.dart';
+
+class AddExpense extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     return AddExpenseState();
@@ -10,18 +13,21 @@ class AddExpense extends StatefulWidget{
 
 enum Jenis { butuh, ingin }
 
-class AddExpenseState extends State<AddExpense>{
+class AddExpenseState extends State<AddExpense> {
   final _formKey = GlobalKey<FormState>();
   TextEditingController _titleController;
   TextEditingController _amountController;
   Jenis _jenis = Jenis.butuh;
+  dynamic database;
   @override
-  void initState(){
+  void initState() {
     _titleController = TextEditingController();
     _amountController = TextEditingController();
+    database = Provider.of<AppDatabase>(context, listen: false);
   }
+
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Tambah Pengeluaran'),
@@ -58,8 +64,10 @@ class AddExpenseState extends State<AddExpense>{
                       Radio(
                         value: Jenis.butuh,
                         groupValue: _jenis,
-                        onChanged: (Jenis j){
-                          setState((){ _jenis = j; });
+                        onChanged: (Jenis j) {
+                          setState(() {
+                            _jenis = j;
+                          });
                         },
                       ),
                       Text('Butuh'),
@@ -70,8 +78,10 @@ class AddExpenseState extends State<AddExpense>{
                       Radio(
                         value: Jenis.ingin,
                         groupValue: _jenis,
-                        onChanged: (Jenis j){
-                          setState((){ _jenis = j; });
+                        onChanged: (Jenis j) {
+                          setState(() {
+                            _jenis = j;
+                          });
                         },
                       ),
                       Text('Ingin'),
@@ -82,6 +92,15 @@ class AddExpenseState extends State<AddExpense>{
               RaisedButton(
                 child: Text('Add!'),
                 onPressed: () async {
+                  String category = _jenis == Jenis.butuh ? "Butuh" : "Ingin";
+                  Expense expense = Expense(
+                    amount: int.parse(_amountController.text),
+                    title: _titleController.text,
+                    category: category,
+                    date: DateTime.now()
+                  );
+                  await database.insertExpense(expense);
+                  print(await database.getAllExpenses());
                   Navigator.pop(context);
                 },
               ),
