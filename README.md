@@ -8,7 +8,7 @@ Anggota:
 | NIM | Nama | Kontribusi |
 | --- | --- | --- |
 | 16519003 | Giant Andreas Tambunan | Expense |
-| 16519020 | I Gede Govindabhakta | Bantuin Tampilan Grafik Tren Pengeluaran |
+| 16519020 | I Gede Govindabhakta | Bantuin Tampilan Grafik Tren Pengeluaran, Tech Support |
 | 16519032 | Gavriel Benny | Moral Support |
 | 16519099 | Nizamixavier Rafif Lutvie | Tampilan grafik tren pengeluaran |
 | 16519101 | Fahrel Naufal | Data pengeluaran | 
