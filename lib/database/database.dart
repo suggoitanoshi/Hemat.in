@@ -40,6 +40,8 @@ class AppDatabase extends _$AppDatabase {
       (select(expenses)..where((a) => a.date.month.equals(thisMonth.month)))
           .get();
 
+  //Buat jumlah perbulan, panggil aja getThisMonthExpenses terus hasilnya tambahil .date.month.sum()
+
   Future insertExpense(Expense expense) => into(expenses).insert(expense);
 
   Future deleteExpense(Expense expense) => delete(expenses).delete(expense);
