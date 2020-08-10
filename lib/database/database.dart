@@ -36,11 +36,9 @@ class AppDatabase extends _$AppDatabase {
 
   Future<List<Expense>> getAllExpenses() => select(expenses).get();
 
-  Future<List<Expense>> getThisMonthExpenses(DateTime thisMonth) {
-    return (select(expenses)
-          ..where((a) => a.date.month.equals(thisMonth.month)))
-        .get();
-  }
+  Future<List<Expense>> getThisMonthExpenses(DateTime thisMonth) =>
+      (select(expenses)..where((a) => a.date.month.equals(thisMonth.month)))
+          .get();
 
   Future insertExpense(Expense expense) => into(expenses).insert(expense);
 
