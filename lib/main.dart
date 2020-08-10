@@ -130,31 +130,6 @@ class _MyHomePageState extends State<MyHomePage> {
               data: data,
             ),
             Card(
-                child: Padding(
-              padding: EdgeInsets.all(10),
-              child: Column(
-                children: <Widget>[
-                  Text(
-                    'Insight',
-                    style: Theme.of(context).textTheme.headline4,
-                  ),
-                ],
-              ),
-            )),
-            Card(
-              child: Padding(
-                padding: EdgeInsets.all(10),
-                child: Column(
-                  children: <Widget>[
-                    Text(
-                      'Evaluasi',
-                      style: Theme.of(context).textTheme.headline4,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Card(
               child: Padding(
                 padding: EdgeInsets.all(10),
                 child: Column(
@@ -192,17 +167,19 @@ class _MyHomePageState extends State<MyHomePage> {
                           state = result;
                         });
                       },
-                    )
+                    ),
+                    RaisedButton(
+                        child: Text('Pengeluaran'),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Pengeluaran()));
+                        })
                   ],
                 ),
               ),
             ),
-            FlatButton(
-              child: Text('Pengeluaran',style: Theme.of(context).textTheme.headline4),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> Pengeluaran()));
-              }
-            )
           ],
         ),
       ),
