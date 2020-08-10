@@ -50,7 +50,7 @@ class _SetLimitState extends State<SetLimit> {
                 final database = Provider.of<AppDatabase>(context,listen: false);
                 
                 if(widget.limit == null){
-                  final newLimit = Limit(limit: int.parse(_controller.text));
+                  final newLimit = Limit(limit: int.parse(_controller.text)); 
                   setLimit(newLimit);
                   await database.addLimit(newLimit);
                 }else{
