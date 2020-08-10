@@ -128,12 +128,10 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             FutureBuilder(
               future: database.getAllExpenses(),
-              builder:
-                  (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-                    final allExpense = snapshot.data;
-                    // TODO
-                    
-                  },
+              builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
+                final allExpense = snapshot.data;
+                // TODO
+              },
             ),
             Card(
               child: Padding(
