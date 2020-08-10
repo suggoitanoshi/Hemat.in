@@ -126,15 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            FutureBuilder(
-              future: database.getAllExpenses(),
-              builder:
-                  (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
-                    final allExpense = snapshot.data;
-                    // TODO
-                    
-                  },
-            ),
+            Text("Testing"),
             Card(
               child: Padding(
                 padding: EdgeInsets.all(10),
