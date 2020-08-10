@@ -8,13 +8,13 @@ Anggota:
 | NIM | Nama | Kontribusi |
 | --- | --- | --- |
 | 16519003 | Giant Andreas Tambunan | Expense |
-| 16519020 | I Gede Govindabhakta | Bantuin Tampilan Grafik Tren Pengeluaran |
+| 16519020 | I Gede Govindabhakta | UI Fixes, Database getThisMonthExpense method |
 | 16519032 | Gavriel Benny | |
 | 16519099 | Nizamixavier Rafif Lutvie | Tampilan grafik tren pengeluaran |
-| 16519101 | Fahrel Naufal | | Data pengeluaran
+| 16519101 | Fahrel Naufal | Data pengeluaran | 
 | 16519135 | Wisnu Aditya Samiadji | |
 | 16519138 | Raffi Zulvian Muzhaffar | |
-| 16519165 | Jason Stanley Yoman | Database Pengeluaran dan Limit, Layar Set Limit, Logic Set Limit |
+| 16519165 | Jason Stanley Yoman | Database Pengeluaran dan Limit, Layar Set Limit, Logic Set Limit, Database GOD |
 | 16519187 | Fransiskus Febryan Suryawan | Kerangka layar utama, layar tambah pengeluaran, layar penghalang aplikasi |
 | 16519407 | Muhammad Akram Al Bari | |
 | 16519532 | Muhammad Fahkry Malta | |
