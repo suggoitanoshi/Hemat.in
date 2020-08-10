@@ -42,6 +42,13 @@ class AppDatabase extends _$AppDatabase {
 
   //Buat jumlah perbulan, panggil aja getThisMonthExpenses terus hasilnya tambahil .date.month.sum()
 
+  Future<List<Expense>> getAllExpensesSum() {
+    final expenseSum = expenses.amount.sum();
+    final query = select(expenses)..addColumns([expenseSum]);
+
+    return (query).get();
+  }
+
   Future insertExpense(Expense expense) => into(expenses).insert(expense);
 
   Future deleteExpense(Expense expense) => delete(expenses).delete(expense);
