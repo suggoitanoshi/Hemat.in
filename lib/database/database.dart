@@ -3,7 +3,7 @@ import 'package:moor/moor.dart';
 
 part 'database.g.dart';
 
-class Expenses extends Table{
+class Expenses extends Table {
   IntColumn get id => integer().autoIncrement()();
 
   TextColumn get title => text()();
@@ -15,33 +15,38 @@ class Expenses extends Table{
   DateTimeColumn get date => dateTime()();
 }
 
-class Limits extends Table{
+class Limits extends Table {
   IntColumn get id => integer().autoIncrement()();
   IntColumn get limit => integer()();
 }
 
-
-@UseMoor(tables:[Expenses,Limits])
-
-class AppDatabase extends _$AppDatabase{
-  AppDatabase():super((FlutterQueryExecutor.inDatabaseFolder(path: 'db.sqlite',logStatements:true)));
+@UseMoor(tables: [Expenses, Limits])
+class AppDatabase extends _$AppDatabase {
+  AppDatabase()
+      : super((FlutterQueryExecutor.inDatabaseFolder(
+            path: 'db.sqlite', logStatements: true)));
   @override
-  MigrationStrategy get migration => MigrationStrategy(
-    onUpgrade: (m,from,to) async{
-      if(from == 1){
-        await m.createTable(limits);
-      }
-    }
-  );
+  MigrationStrategy get migration =>
+      MigrationStrategy(onUpgrade: (m, from, to) async {
+        if (from == 1) {
+          await m.createTable(limits);
+        }
+      });
   Stream<List<Expense>> watchAllExpenses() => select(expenses).watch();
 
   Future<List<Expense>> getAllExpenses() => select(expenses).get();
+
+  Future<List<Expense>> getThisMonthExpenses(DateTime thisMonth) {
+    return (select(expenses)
+          ..where((a) => a.date.month.equals(thisMonth.month)))
+        .get();
+  }
 
   Future insertExpense(Expense expense) => into(expenses).insert(expense);
 
   Future deleteExpense(Expense expense) => delete(expenses).delete(expense);
 
-  Future <List<Limit>> getLimit() => select(limits).get();
+  Future<List<Limit>> getLimit() => select(limits).get();
 
   Future setLimit(Limit limit) => update(limits).replace(limit);
 
