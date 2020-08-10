@@ -12,7 +12,7 @@ Anggota:
 | 16519032 | Gavriel Benny | |
 | 16519099 | Nizamixavier Rafif Lutvie | Tampilan grafik tren pengeluaran |
 | 16519101 | Fahrel Naufal | | Data pengeluaran
-| 16519135 | Wisnu Aditya Samiadji | |
+| 16519135 | Wisnu Aditya Samiadji | | Visualisasi Data Evaluasi
 | 16519138 | Raffi Zulvian Muzhaffar | |
 | 16519165 | Jason Stanley Yoman | Database Pengeluaran dan Limit, Layar Set Limit, Logic Set Limit |
 | 16519187 | Fransiskus Febryan Suryawan | Kerangka layar utama, layar tambah pengeluaran, layar penghalang aplikasi |
