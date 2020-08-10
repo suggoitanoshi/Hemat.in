@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:hematin/subscriber_chart.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:hematin/subscriber_series.dart';
+import 'package:hematin/expense.dart';
 
 void main() {
   runApp(MyApp());
@@ -196,6 +197,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            FlatButton(
+              child: Text('Pengeluaran',style: Theme.of(context).textTheme.headline4),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Pengeluaran()));
+              }
+            )
           ],
         ),
       ),

@@ -7,7 +7,7 @@ Nama Kelompok: Nama Kelompok
 Anggota:
 | NIM | Nama | Kontribusi |
 | --- | --- | --- |
-| 16519003 | Giant Andreas Tambunan | |
+| 16519003 | Giant Andreas Tambunan | Expense |
 | 16519020 | I Gede Govindabhakta | Bantuin Tampilan Grafik Tren Pengeluaran |
 | 16519032 | Gavriel Benny | |
 | 16519099 | Nizamixavier Rafif Lutvie | Tampilan grafik tren pengeluaran |
