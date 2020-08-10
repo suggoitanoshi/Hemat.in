@@ -11,7 +11,7 @@ Anggota:
 | 16519020 | I Gede Govindabhakta | Bantuin Tampilan Grafik Tren Pengeluaran |
 | 16519032 | Gavriel Benny | |
 | 16519099 | Nizamixavier Rafif Lutvie | Tampilan grafik tren pengeluaran |
-| 16519101 | Fahrel Naufal | |
+| 16519101 | Fahrel Naufal | | Data pengeluaran
 | 16519135 | Wisnu Aditya Samiadji | |
 | 16519138 | Raffi Zulvian Muzhaffar | |
 | 16519165 | Jason Stanley Yoman | Database Pengeluaran dan Limit, Layar Set Limit, Logic Set Limit |
